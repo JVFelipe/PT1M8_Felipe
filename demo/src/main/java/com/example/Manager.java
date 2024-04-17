@@ -9,6 +9,15 @@ public class Manager extends Person {
     Date startDate;
     int experience;
     /**
+     * 
+     * @param startDate start date of the manager
+     * @param experience experience level of the manager
+     */
+    public Manager(Date startDate, int experience) {
+        this.startDate = startDate;
+        this.experience = experience;
+    }
+    /**
      * "Getter" to retrieve the start date of the manager's tenure
      * @return the start date of the manager's tenure
      */

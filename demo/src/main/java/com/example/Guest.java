@@ -6,7 +6,13 @@ package com.example;
  */
 public class Guest extends Person {
     String nationality;
-
+/**
+ * 
+ * @param nationality Nationality of the person
+ */
+    public Guest(String nationality) {
+        this.nationality = nationality;
+    }
     /**
      * "Getter" to retrieve the nationatility of the guest
      * @return the nationality of the guest
@@ -21,4 +27,5 @@ public class Guest extends Person {
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
+    
 }

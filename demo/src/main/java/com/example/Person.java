@@ -9,6 +9,15 @@ public abstract class Person {
     String identifier;
 
     /**
+     * 
+     * @param name Name of the person
+     * @param identifier id of the person
+     */
+    public Person(String name, String identifier) {
+        this.name = name;
+        this.identifier = identifier;
+    }
+    /**
      * "Getter" to get the name of the person
      * @return the name of the person
      */
