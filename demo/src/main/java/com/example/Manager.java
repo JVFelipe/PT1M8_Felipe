@@ -9,11 +9,12 @@ public class Manager extends Person {
     Date startDate;
     int experience;
     /**
-     * 
+     * @param super(name,identifier) of the class Person
      * @param startDate start date of the manager
      * @param experience experience level of the manager
      */
-    public Manager(Date startDate, int experience) {
+    public Manager(String name, String identifier, Date startDate, int experience) {
+        super(name, identifier);
         this.startDate = startDate;
         this.experience = experience;
     }

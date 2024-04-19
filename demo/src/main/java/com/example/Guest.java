@@ -7,12 +7,13 @@ package com.example;
 public class Guest extends Person {
     String nationality;
 /**
- * 
+ * @param super(name,identifier) of the class Person
  * @param nationality Nationality of the person
  */
-    public Guest(String nationality) {
-        this.nationality = nationality;
-    }
+    public Guest(String name, String identifier, String nationality) {
+    super(name, identifier);
+    this.nationality = nationality;
+}
     /**
      * "Getter" to retrieve the nationatility of the guest
      * @return the nationality of the guest
